@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome</title>
+</head>
+
+<body>
+
+  {{#if user}}
+  Привет, {{user}}
+  <form method="GET" action="/logout">
+
+    <div class="box">
+
+      <button>Log Out</button>
+
+    </div>
+
+  </form>
+
+  {{else}}
+  Привет, гость
+  <form method="GET" action="/signup">
+
+    <div class="box">
+
+      <button>Sign Up</button>
+      <br>
+      <br>
+
+    </div>
+  </form>
+
+  <form method="GET" action="/login">
+
+    <div class="box">
+
+      <button>Log In</button>
+      <br>
+      <br>
+
+    </div>
+
+  </form>
+
+
+  {{/if}}
+
+</body>
+
+</html>
